@@ -1,5 +1,6 @@
 *{
     margin:0;
+    /* user-select: none;  */
 }
 
 /* body{
@@ -46,6 +47,7 @@ h3{
     
     z-index:99;
     /* animation-duration: 1s; */
+    user-select: none; 
 }
 
 #speaker1{
