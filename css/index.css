@@ -38,41 +38,58 @@ h2{
 }
 
 h3{
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: clamp(1rem, 5vw, 4rem);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width:50vw;
-    height:50vw;
+    
     position: absolute;
     
     z-index:99;
+    /* animation-duration: 1s; */
 }
 
 #speaker1{
-    left:-33vw;
-    top:4vw;
+    position:absolute;
+    width:40vw;
+    height:10vw;
+    left:-7vw;
+    top:18vw;
     rotate: 90deg;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
 }
 
 #speaker2{
+    width:50vw;
     height:4vw;
-    position:relative;
+    left:0vw;
+    position:absolute;
     margin:130 30;
     rotate: 340deg;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+
 }
 
 #speaker3{
+    width:50vw;
     height: 8vh;
-    position:relative;
+    left: 5vw;
+    position:absolute;
     margin: 40 auto;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+
 }
 
 #speaker4{
     position: absolute;
     /* rotate: 270deg; */
+    left:0vw;
+    top: 0vw;
     height:4vh;
     width: 30vw;
     margin: 20 40 auto;
     z-index:99;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+
 
 }
 
@@ -169,8 +186,9 @@ p{
     left:0vw;
 
     /* opacity: 0; */
-
+    overflow:auto;
     z-index:2;
+    transition: background-color 1s ease;
 }
 
 .yellow2{
@@ -216,6 +234,7 @@ p{
     height: 40vh;
     left: 20vw;
     top: 0vh;
+    transition: background-color 1s ease;
 
     /* opacity: 0; */
 
@@ -232,6 +251,8 @@ p{
     top: -100vh;
     display:none;
     /* z-index:2; */
+    transition: background-color 1s ease;
+
 }
 
 .Bback{
@@ -264,6 +285,7 @@ p{
     height: 60vh;
     top:40vh;
     left:20vw;
+    transition: background-color 1s ease;
 
     /* opacity: 0; */
 
@@ -281,6 +303,8 @@ p{
     left:20vw;
     top:40vh;  
     z-index:20;
+    transition: background-color 1s ease;
+
 
     /* opacity: 0; */
 }
@@ -295,6 +319,7 @@ p{
     left:0vw;
     top:100vh;
     display:none;
+    
 }
 
 .Rback{
@@ -342,6 +367,7 @@ p{
     top:0vh;
 
     z-index:23;
+    transition: background-color 1s ease;
 
     /* opacity: 0; */
 
@@ -361,6 +387,8 @@ p{
 
     z-index:23;
     /* opacity: 0; */
+    transition: background-color 1s ease;
+
 
 }
 

@@ -30,6 +30,8 @@
 $(document).ready(function() {
 
 
+
+
 let Gclicks = 0;
 let GmaxClicks = 5;
 
@@ -381,5 +383,97 @@ $(".Bback").click(function(){
     animationDone = false;
 
 });
+
+
+
+
+
+
+
+// hover
+
+$(".yellow").hover(
+    function() {
+        $(this).css('background-color', 'rgb(190, 162, 2)');
+        $("#speaker1").css('transform','scale(1.4)');
+        $("#speaker1").css('left','-9vw');
+        $("#speaker1").css('top','24vw');
+        $("#speaker1").css('color','rgb(245, 232, 132)');
+        // $("#speaker1").css('font-size','7vw');
+    },
+    function() {
+        $(this).css('background-color', 'rgb(245, 217, 6)')
+        $("#speaker1").css('transform','scale(1)');
+        $("#speaker1").css('left','-7vw');
+        $("#speaker1").css('top','20vw');
+        $("#speaker1").css('color','black');
+        // $("#speaker1").css('font-size','5vw');
+
+    }
+);
+      
+
+$(".red1, .red2").hover(
+    function() {
+        $(".red1").css('background-color', 'rgb(166, 48, 35)');
+        $(".red2").css('background-color', 'rgb(166, 48, 35)');
+        $("#speaker2").css('transform','scale(1.4)');
+        $("#speaker2").css('left','7vw');
+        $("#speaker2").css('color','rgb(246, 191, 185)');
+        // $("#speaker2").css('top','24vw');
+
+    },
+    function() {
+        $(".red1").css('background-color', 'rgb(235, 82, 66)');
+        $(".red2").css('background-color', 'rgb(235, 82, 66)');
+        $("#speaker2").css('transform','scale(1)');
+        $("#speaker2").css('left','0vw');
+        $("#speaker2").css('color','black');
+        // $("#speaker2").css('left','-7vw');
+        // $("#speaker2").css('top','20vw');
+
+
+    }
+);
+
+$(".blue").hover(
+    function() {
+        $(this).css('background-color', 'rgb(2, 157, 218)');
+        $("#speaker3").css('transform','scale(1.4)');
+        $("#speaker3").css('left','12vw');
+        $("#speaker3").css('color','rgb(138, 222, 239)');
+    },
+    function() {
+        $(this).css('background-color', 'rgb(34, 205, 239)')
+        $("#speaker3").css('transform','scale(1)');
+        $("#speaker3").css('left','5vw');
+        $("#speaker3").css('color','black');
+
+    }
+);
+
+$(".green1, .green2").hover(
+    function() {
+        $(".green1").css('background-color', 'rgb(83, 158, 9)');
+        $(".green2").css('background-color', 'rgb(83, 158, 9)');
+        $("#speaker4").css('transform','scale(1.4)');
+        $("#speaker4").css('left','5vw');
+        $("#speaker4").css('color','rgb(194, 244, 144)');
+        $("#speaker4").css('top','-1vw');
+
+    },
+    function() {
+        $(".green1").css('background-color', 'rgb(135, 220, 51)');
+        $(".green2").css('background-color', 'rgb(135, 220, 51)');
+        $("#speaker4").css('transform','scale(1)');
+        $("#speaker4").css('left','0vw');
+        $("#speaker4").css('color','black');
+        // $("#speaker2").css('left','-7vw');
+        $("#speaker4").css('top','0vw');
+
+
+    }
+);
+
 
 });
