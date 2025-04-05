@@ -97,9 +97,9 @@ h3{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     font-size:5vw;
-    width: 80vw;
+    width: 75vw;
     margin:auto;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .Ctime_location{
@@ -112,8 +112,9 @@ h3{
     
     
 
-    font-size:18px;
-    width: 60vw;
+    /* font-size:18px; */
+    font-size: clamp(1rem, 27px, 5rem);
+    width: 75vw;
 
     margin:80 auto;
 
@@ -123,19 +124,20 @@ h3{
 .info{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    width: 60vw;
+    width: 75vw;
     margin: 90 auto;
 }
 
 p{
-    font-size:16px;
+    font-size:clamp(1rem, 20px, 5rem);;
     font-weight: lighter;
     font-style: normal;
 }
 
 .h7{
     font-weight: bold;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: clamp(1rem, 25px, 4rem);
     margin-top:30;
     margin: 30 auto;
 }
