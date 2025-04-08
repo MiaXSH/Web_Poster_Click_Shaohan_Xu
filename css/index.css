@@ -11,6 +11,7 @@
     position:relative;
     width:100vw;
     height:100vh;
+    /* overflow:hidden; */
     /* top:100vh;
     left:100vw; */
 }
@@ -57,7 +58,7 @@ h3{
     left:-7vw;
     top:18vw;
     rotate: 90deg;
-    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease, margin 0.8s ease, rotate 0.8s ease;
 }
 
 #speaker2{
@@ -65,9 +66,12 @@ h3{
     height:4vw;
     left:0vw;
     position:absolute;
-    margin:130 30;
-    rotate: 340deg;
-    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+    /* margin:130 30;
+    rotate: 340deg; */
+
+    margin:90 70;
+    /* rotate: 0deg; */
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease, margin 0.8s ease, rotate 0.8s ease;
 
 }
 
@@ -77,7 +81,7 @@ h3{
     left: 5vw;
     position:absolute;
     margin: 40 auto;
-    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease, margin 0.8s ease, rotate 0.8s ease;
 
 }
 
@@ -87,10 +91,10 @@ h3{
     left:0vw;
     top: 0vw;
     height:4vh;
-    width: 30vw;
+    width: 23vw;
     margin: 20 40 auto;
     z-index:99;
-    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease;
+    transition: transform 0.8s ease, left 0.8s ease, top 0.8s ease, color 0.8s ease, margin 0.8s ease, rotate 0.8s ease;
 
 
 }
@@ -167,32 +171,42 @@ p{
 
 }
 
-#yellowText{
-    color: rgb(190, 162, 2);
-}
-
 #redTitle{
     color: rgb(80, 17, 17);
-}
-
-#redText{
-    color:rgb(153, 26, 12);
 }
 
 #blueTitle{
     color: rgb(1, 47, 104);
 }
 
-#blueText{
-    color:rgb(0, 124, 174);
-}
-
 #greenTitle{
     color: rgb(39, 78, 0);
 }
 
+#yellowText{
+    /* color: rgb(190, 162, 2); */
+    color: rgb(245, 232, 132);
+
+}
+
+#redText{
+    /* color:rgb(153, 26, 12); */
+    color:rgb(246, 191, 185);
+
+}
+
+
+#blueText{
+    /* color:rgb(0, 124, 174); */
+    color:rgb(138, 222, 239)
+}
+
+
+
 #greenText{
-    color:rgb(70, 140, 0);
+    /* color:rgb(70, 140, 0); */ 
+    color:rgb(194, 244, 144);
+
 }
 
 .yellow{
@@ -224,7 +238,7 @@ p{
     left:-100vw;
     display:none;
     z-index:0;
-
+    transition: left 0.8s ease;
 
     /* opacity: 0; */
 }
@@ -235,7 +249,7 @@ p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2vw;
     bottom: 3vh;
-    left: -98vw;
+    left: calc(-98vw - 150px);
     display:none;
     z-index:80;
 }
@@ -271,7 +285,7 @@ p{
     top: -100vh;
     display:none;
     /* z-index:2; */
-    transition: background-color 1s ease;
+    transition: background-color 1s ease, top 0.8s ease;
 
 }
 
@@ -280,7 +294,7 @@ p{
     position: absolute;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2vw;
-    top: -97vh;
+    top: calc(-97vh - 150px);
     right: 2vw;
     display:none;
     z-index:80;
@@ -338,7 +352,9 @@ p{
     height: 100vh;
     left:0vw;
     top:100vh;
+    /* top: calc(100vh + 240px); */
     display:none;
+    transition: top 0.8s ease;
     
 }
 
@@ -347,7 +363,8 @@ p{
     position: absolute;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2vw;
-    top: 194vh;
+    /* top: 194vh; */
+    top: calc(194vh + 240px);
     right: 2vw;
     display:none;
     z-index:80;
@@ -424,13 +441,19 @@ p{
     width: 100vw;
     height: 100vh;
     background-color: rgb(135, 220, 51);
-    left:100vw;
+    /* left: calc(100vw + 150px); */
+    left: 100vw;
+
     top:0vh;
 
     z-index:0;
 
     display:none;
+
+    transition: left 0.8s ease;
 }
+
+
 
 /* .green1.active{
     width:100vw;
@@ -443,7 +466,7 @@ p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2vw;
     bottom: 3vh;
-    left: 194vw;
+    left: calc(194vw + 150px);
     display:none;
     z-index:80;
 }
