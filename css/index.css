@@ -144,7 +144,23 @@ p{
     margin: 30 auto;
 }
 
+#yellowTitle-a1 a{
+    color: rgb(190, 162, 2);
+}
 
+#redTitle-a2 a{
+    color:rgb(153, 26, 12);
+}
+
+#blueTitle-a2 a{
+    color:rgb(0, 124, 174);
+    
+}
+
+#greenTitle-a2 a{
+    color:rgb(70, 140, 0);
+    
+}
 
 #yellowTitle{
     color: rgb(112, 96, 0);
